@@ -1,6 +1,6 @@
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-const MONGODB_URL = "mongodb+srv://db@samail-merndb.varfo.mongodb.net/?retryWrites=true&w=majority&appName=Sdb";
+const MONGODB_URL = "mongodb+srv://db@merndb.varfo.mongodb.net/?retryWrites=true&w=majority&appName=Sdb";
 
 let mongo_db;
 
