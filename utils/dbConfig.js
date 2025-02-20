@@ -1,6 +1,6 @@
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-const MONGODB_URL = "mongodb+srv://-merndb.varfo.mongodb.net/?retryWrites=true&w=majority&appName=Sa";
+const MONGODB_URL = "mongodbf://admin:admin@localhost:27017";
 
 let mongo_db;
 
@@ -8,7 +8,7 @@ const mongoDbConfig = (callback) => {
     MongoClient.connect(MONGODB_URL)
         .then( client => {
             callback();
-            mongo_db = client.db("sample_mflix");
+            mongo_db = client.db("zksamail-db");
         }).catch( (err) => {
         console.log("Error in connections", err);
     });
