@@ -1,6 +1,6 @@
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
-const MONGODB_URL = "mongodbf://admin:admin@localhost:27017";
+const MONGODB_URL = "mongodb://admin:123@localhost:27017";
 
 let mongo_db;
 
@@ -16,7 +16,7 @@ const mongoDbConfig = (callback) => {
 
 const getDB = () => {
     if(!mongo_db) {
-        throw new Error("Database not initialized");
+        throw new Error("Database not initialized please check");
     }
     return mongo_db;
 }
