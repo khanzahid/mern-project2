@@ -15,7 +15,7 @@ exports.getHomes = (req, res, next) => {
 };
 
 // exports.getHome = (req, res, next) => {
-//   res.render("home", { pageTitle: "Home Page" });
+//   res.render("home", { pageTitle: "Home" });
 // };
 
 exports.getApiJson = (req, res, next) => {
